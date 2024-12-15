@@ -52,9 +52,14 @@
                         </form>
                     </div>
                     <% } %>
-                        <div class="card-footer text-muted">
-                            2 days ago
-                        </div>
+                    <div class="card-footer text-muted">
+                        Created on <%= new Date(campground.createdAt).toLocaleString('en-IN', { 
+                            timeZone: 'Asia/Kolkata', 
+                            day: 'numeric', 
+                            month: 'long', 
+                            year: 'numeric' 
+                        }) %>
+                    </div>                    
             </div>
 
         </div>
